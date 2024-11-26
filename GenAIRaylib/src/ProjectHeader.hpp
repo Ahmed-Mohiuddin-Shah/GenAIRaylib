@@ -32,9 +32,9 @@ namespace ProjectInfo
 }
 
 // Include for Hostel Class
-#include "hostel.h"
+#include "GenAI.h"
 
-Hostel hostelInstance;
+GenAI genAIInstance;
 
 // Includes For GUI APP
 #include "raylib.h"

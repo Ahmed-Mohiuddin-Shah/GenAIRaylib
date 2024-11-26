@@ -73,8 +73,8 @@ bool writeHostelInfoToFile() {
 
     try
     {
-        std::string hostelInfoStringDump = hostelInstance.toJson().dump(4);
-        FileReader::writeToFile(ProjectInfo::fileName, hostelInfoStringDump);
+        std::string genAIStringDump = genAIInstance.toJson().dump(4);
+        FileReader::writeToFile(ProjectInfo::fileName, genAIStringDump);
         return true;
     }
     catch (const std::exception e)

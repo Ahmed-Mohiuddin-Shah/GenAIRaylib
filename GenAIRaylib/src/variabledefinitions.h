@@ -87,7 +87,7 @@ namespace variables {
 	};
 
 	std::string fileContent = "";
-	JSON hostelJSON;
+	JSON genAIInfoJson;
 
 	// --------------- Overlay -----------------------
 	bool globalBurgerButtonToggleState = false;

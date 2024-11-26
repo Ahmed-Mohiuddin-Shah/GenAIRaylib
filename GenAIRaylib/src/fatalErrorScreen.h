@@ -18,7 +18,7 @@ void fatalErrorScreen() {
 
 		drawCustomBodyText("Fatal Error \n\n\n\n\n\nOccured!!!", Vector2{0, 0}, variables::headings, 1, RED);
 		drawCustomBodyText(fatalErrorMessage.c_str(), Vector2{0, 230}, variables::labels, 1, RED);
-		DrawTexture(hostelInstance.getMode() ? fatalErrorTexture : fatalErrorCatTexture, screenWidth - (hostelInstance.getMode() ? fatalErrorTexture : fatalErrorCatTexture).width, screenHeight - (hostelInstance.getMode() ? fatalErrorTexture : fatalErrorCatTexture).height, WHITE);
+		DrawTexture(genAIInstance.getMode() ? fatalErrorTexture : fatalErrorCatTexture, screenWidth - (genAIInstance.getMode() ? fatalErrorTexture : fatalErrorCatTexture).width, screenHeight - (genAIInstance.getMode() ? fatalErrorTexture : fatalErrorCatTexture).height, WHITE);
 
 		errorPopup.draw();
 		guiOverlay();

@@ -352,9 +352,9 @@ public:
                 variables::currentLayer = button.getScreenLayer();
             }
         }
-        modeToggleButton.setState(hostelInstance.getMode());
+        modeToggleButton.setState(genAIInstance.getMode());
         modeToggleButton.update();
-        hostelInstance.setMode(modeToggleButton.getState());
+        genAIInstance.setMode(modeToggleButton.getState());
     }
 
     bool isMouseClickedOutsideOfSideBar() {
@@ -433,7 +433,7 @@ public:
 
 
         // if Serious mode is off
-        if (!hostelInstance.getMode()) {
+        if (!genAIInstance.getMode()) {
             animateBugCatGIF(Vector2{ sideBarBounds.x + 10, variables::burgerMenuBugCatPosition.y });
         }
         
@@ -544,7 +544,7 @@ public:
         if (isVisible) {
             
             DrawRectangleRounded(bounds, 0.5, 5, RED);
-            DrawTexture(hostelInstance.getMode() ? variables::errorTexture : variables::errorCatTexture, bounds.x, bounds.y, WHITE);
+            DrawTexture(genAIInstance.getMode() ? variables::errorTexture : variables::errorCatTexture, bounds.x, bounds.y, WHITE);
             DrawRectangleRoundedLines(bounds, 0.5, 10, 8, MAROON);
             drawCustomText(TextFormat("     %s", message.c_str()), Vector2{position.x + 10, position.y + 10}, variables::labels, 1, variables::H_WHITE);
         }
@@ -568,7 +568,7 @@ public:
         if (isVisible) {
 
             DrawRectangleRounded(bounds, 0.5, 5, GREEN);
-            DrawTexture(hostelInstance.getMode() ? variables::successTexture : variables::successCatTexture, bounds.x, bounds.y, WHITE);
+            DrawTexture(genAIInstance.getMode() ? variables::successTexture : variables::successCatTexture, bounds.x, bounds.y, WHITE);
             DrawRectangleRoundedLines(bounds, 0.5, 10, 8, DARKGREEN);
             drawCustomText(TextFormat("     %s", message.c_str()), Vector2{ position.x + 10, position.y + 10 }, variables::labels, 1, variables::H_WHITE);
         }

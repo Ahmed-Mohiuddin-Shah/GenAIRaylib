@@ -62,12 +62,12 @@ void loadingScreen() {
 
 		try
 		{
-			hostelJSON = JSON::parse(fileContent);
-			hostelInstance = Hostel(hostelJSON);
+			genAIInfoJson = JSON::parse(fileContent);
+			genAIInstance = GenAI(genAIInfoJson);
 		}
 		catch (const std::exception e)
 		{
-			fatalErrorMessage = e.what() + std::string("\nFileContent: ") + fileContent + std::string("\nHostelJSON") + hostelJSON.dump() + std::string("\nIssue In Hostel JSON Text File\nExit Porgram and create a new one.\nOr if you have a copy of HostelData.txt then restore from there");
+			fatalErrorMessage = e.what() + std::string("\nFileContent: ") + fileContent + std::string("\ngenAIJSON") + genAIInfoJson.dump() + std::string("\nIssue In Gen AI JSON Text File\nExit Porgram and create a new one.\nOr if you have a copy of HostelData.txt then restore from there");
 			currentLayer = FATAL_ERROR_SCREEN;
 			return;
 		}

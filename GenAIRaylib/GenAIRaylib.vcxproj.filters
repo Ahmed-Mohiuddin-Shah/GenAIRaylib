@@ -18,7 +18,7 @@
     <ClCompile Include="src\FileReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\hostel.cpp">
+    <ClCompile Include="src\GenAI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
@@ -84,7 +84,7 @@
     <ClInclude Include="src\homeScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\hostel.h">
+    <ClInclude Include="src\GenAI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\hostelDetailsScreen.h">

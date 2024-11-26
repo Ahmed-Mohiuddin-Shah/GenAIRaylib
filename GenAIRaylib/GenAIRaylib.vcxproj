@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\FileReader.cpp" />
-    <ClCompile Include="src\hostel.cpp" />
+    <ClCompile Include="src\GenAI.cpp" />
     <ClCompile Include="src\ImageGene.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
@@ -48,7 +48,7 @@
     <ClInclude Include="src\GUIElementsClasses.hpp" />
     <ClInclude Include="src\helperfunctions.h" />
     <ClInclude Include="src\homeScreen.h" />
-    <ClInclude Include="src\hostel.h" />
+    <ClInclude Include="src\GenAI.h" />
     <ClInclude Include="src\hostelDetailsScreen.h" />
     <ClInclude Include="src\ImageGene.h" />
     <ClInclude Include="src\loadingScreen.h" />
