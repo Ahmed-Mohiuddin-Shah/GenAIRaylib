@@ -38,6 +38,7 @@
   <ItemGroup>
     <ClCompile Include="src\FileReader.cpp" />
     <ClCompile Include="src\hostel.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\bugcatgif.gif" />

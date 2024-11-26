@@ -55,7 +55,3 @@ Hostel hostelInstance;
 #include "homeScreen.h"
 #include "hostelDetailsScreen.h"
 #include "exitScreen.h"
-#include "addStudentScreen.h"
-#include "addRoomScreen.h"
-#include "displayInvoicesScreen.h"
-#include "addStaffScreen.h"
