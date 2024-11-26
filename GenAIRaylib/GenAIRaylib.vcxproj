@@ -19,25 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\codeSnippets.hpp" />
-    <ClInclude Include="src\exitScreen.h" />
-    <ClInclude Include="src\fatalErrorScreen.h" />
-    <ClInclude Include="src\FileReader.h" />
-    <ClInclude Include="src\flavortext.h" />
-    <ClInclude Include="src\GUIElementsClasses.hpp" />
-    <ClInclude Include="src\helperfunctions.h" />
-    <ClInclude Include="src\homeScreen.h" />
-    <ClInclude Include="src\hostel.h" />
-    <ClInclude Include="src\hostelDetailsScreen.h" />
-    <ClInclude Include="src\loadingScreen.h" />
-    <ClInclude Include="src\overlay.h" />
-    <ClInclude Include="src\ProjectHeader.hpp" />
-    <ClInclude Include="src\texttable.hpp" />
-    <ClInclude Include="src\variabledefinitions.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="src\FileReader.cpp" />
     <ClCompile Include="src\hostel.cpp" />
+    <ClCompile Include="src\ImageGene.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +37,25 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="resources\ComicCode.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\codeSnippets.hpp" />
+    <ClInclude Include="src\createNewHostelScreen.h" />
+    <ClInclude Include="src\exitScreen.h" />
+    <ClInclude Include="src\fatalErrorScreen.h" />
+    <ClInclude Include="src\FileReader.h" />
+    <ClInclude Include="src\flavortext.h" />
+    <ClInclude Include="src\GUIElementsClasses.hpp" />
+    <ClInclude Include="src\helperfunctions.h" />
+    <ClInclude Include="src\homeScreen.h" />
+    <ClInclude Include="src\hostel.h" />
+    <ClInclude Include="src\hostelDetailsScreen.h" />
+    <ClInclude Include="src\ImageGene.h" />
+    <ClInclude Include="src\loadingScreen.h" />
+    <ClInclude Include="src\overlay.h" />
+    <ClInclude Include="src\ProjectHeader.hpp" />
+    <ClInclude Include="src\texttable.hpp" />
+    <ClInclude Include="src\variabledefinitions.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
