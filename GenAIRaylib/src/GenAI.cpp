@@ -14,7 +14,7 @@ JSON GenAI::toJson()
 {
     JSON genAIInfoJson;
 
-    genAIInfoJson["mode"] = getMode();
+    genAIInfoJson["s_mode"] = getMode();
 
     return genAIInfoJson;
 }

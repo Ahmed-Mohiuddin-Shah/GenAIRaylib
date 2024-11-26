@@ -1,6 +1,6 @@
 #pragma once
 
-variables::FileLoadStatus loadHostelDB() {
+variables::FileLoadStatus loadGenAIConfig() {
 
 	std::this_thread::sleep_for(std::chrono::seconds(3));  // HEHE Delay for Funsies :)
 
@@ -23,7 +23,7 @@ void loadingScreen() {
 	using namespace variables;
 	using namespace std::chrono_literals;
 
-	std::future<FileLoadStatus> f = std::async(std::launch::async, loadHostelDB);
+	std::future<FileLoadStatus> f = std::async(std::launch::async, loadGenAIConfig);
 	
 	int textGenDelay = int(targetFPS / 2);
 	int textGenCounter = 0;
@@ -56,7 +56,7 @@ void loadingScreen() {
 	switch (fileStatus)
 	{
 	case variables::DOES_NOT_EXIST:
-		currentLayer = CREATE_NEW_HOSTEL_SCREEN;
+		currentLayer = HOME_SCREEN;   // TODO: Change to FATAL_ERROR_SCREEN
 		break;
 	case variables::LOADED_SUCCESSFULLY:
 
@@ -73,7 +73,7 @@ void loadingScreen() {
 		}
 
 		globalShouldShowSuccessPopup = true;
-		successPopupMessage = "Hostel Info Loaded Successfully!!";
+		successPopupMessage = "Config Loaded Successfully!!";
 		currentLayer = HOME_SCREEN;
 		break;
 	case variables::FAILED_TO_LOAD:

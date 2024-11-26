@@ -28,7 +28,7 @@ namespace ProjectInfo
 	const char* appName = "Hostel Management System";
 
 	// Defaults for file handling
-	std::string fileName = "HostelData.json";
+	std::string fileName = "config.json";
 }
 
 // Include for Hostel Class

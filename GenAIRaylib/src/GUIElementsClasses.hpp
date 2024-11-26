@@ -314,8 +314,8 @@ public:
         sideBarBounds = Rectangle{ closedPositionX, 0, width, variables::screenHeight };
         outsideBounds = Rectangle{ width - width/10, 0, variables::screenWidth - width + width/2, variables::screenHeight };
 
-        buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset + 120, 20, variables::HOSTEL_DETAILS_SCREEN, "Hostel Deets", false });
-        buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset + 60, 20, variables::HOME_SCREEN, "Home", false });
+        //buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset + 120, 20, variables::HOSTEL_DETAILS_SCREEN, "Hostel Deets", false });
+        buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset + 60, 20, variables::HOME_SCREEN, "Home", false });/*
         buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 80, variables::STUDENT_DETAILS_SCREEN, "Student Deets", false });
         buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 120, variables::ADD_STUDENT_SCREEN, "Add/Delete Student", false });
         buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 160, variables::PROMOTE_STUDENTS_SCREEN, "Promote Students", false });
@@ -325,9 +325,9 @@ public:
         buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 340, variables::ADD_STAFF_SCREEN, "Add Staff", false });
         buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 380, variables::REMOVE_STAFF_SCREEN, "Remove Staff", false });
         buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 430, variables::GET_SPECIFIC_INVOICE_SCREEN, "All Invoices", false });
-        buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 470, variables::GENERATE_INVOICES_SCREEN, "Generate Invoice", false });
+        buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 470, variables::GENERATE_INVOICES_SCREEN, "Generate Invoice", false });*/
         // buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 550, variables::DISPLAY_INVOICES_SCREEN, "Display Invoices", false });
-        buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 510, variables::MARK_INVOICE_PAID_SCREEN, "Mark Invoice Paid", false });
+        //buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset, 510, variables::MARK_INVOICE_PAID_SCREEN, "Mark Invoice Paid", false });
         buttons.push_back(GUISideBarButton{ sideBarBounds.x + buttonOffset + 250, 670, variables::EXIT_SCREEN, "Exit", true });
 
         modeToggleButton = GUIToggleButton(sideBarBounds.x + buttonOffset, 560, "Serious", "Fun", " Mode: ");
@@ -388,10 +388,10 @@ public:
         }
 
         for (auto& button : buttons) {
-            if (button.getScreenLayer() == variables::HOSTEL_DETAILS_SCREEN) {
+            /*if (button.getScreenLayer() == variables::HOSTEL_DETAILS_SCREEN) {
                 button.setPosition(sideBarBounds.x + buttonOffset + 120);
                 continue;
-            }
+            }*/
             if (button.getScreenLayer() == variables::HOME_SCREEN) {
                 button.setPosition(sideBarBounds.x + buttonOffset + 60);
                 continue;

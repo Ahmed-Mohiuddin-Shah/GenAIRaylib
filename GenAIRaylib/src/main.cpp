@@ -15,6 +15,9 @@ int main(void)
         case variables::LOADING_SCREEN:
             loadingScreen();
             break;
+        case variables::HOME_SCREEN:
+			homeScreen();
+			break;
         case variables::FATAL_ERROR_SCREEN:
             fatalErrorScreen();
             break;
