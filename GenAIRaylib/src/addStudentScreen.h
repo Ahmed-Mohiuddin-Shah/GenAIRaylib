@@ -59,11 +59,6 @@ void addStudentScreen() {
 
 	ErrorPopup errorPopup(1500.0f, 2.0f);
 
-	if (!hostelInstance.areRoomsAvailable()) {
-		currentLayer = ADD_ROOM_SCREEN;
-		globalShouldShowRoomNotAvailableErrorPopup = true;
-	}
-
 	while (!layerChangedHandler() && !shouldExit)
 	{
 		// --------- Logic -----------------
@@ -131,15 +126,6 @@ void addStudentScreen() {
 					currentLayer = FATAL_ERROR_SCREEN;
 				}
 
-				if (!hostelInstance.checkIfStudentExists(studentID)) {
-					errorPopup.showMessage("Student Does Not Exist!!\     Try a different ID");
-				}
-				else {
-					hostelInstance.deleteStudent(studentID);
-					successPopupMessage = "Student removed Successfully!!";
-					globalShouldShowSuccessPopup = true;
-					currentLayer = STUDENT_DETAILS_SCREEN;
-				}
 			}
 		}
 

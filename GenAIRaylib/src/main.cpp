@@ -18,51 +18,6 @@ int main(void)
         case variables::FATAL_ERROR_SCREEN:
             fatalErrorScreen();
             break;
-        case variables::CREATE_NEW_HOSTEL_SCREEN:
-            createNewHostelScreen();
-            break;
-        case variables::HOME_SCREEN:
-            homeScreen();
-            break;
-        case variables::HOSTEL_DETAILS_SCREEN:
-            hostelDetailsScreen();
-            break;
-        case variables::STUDENT_DETAILS_SCREEN:
-            studentDetailsScreen();
-            break;
-        case variables::ROOM_DETAILS_SCREEN:
-            roomDetailsScreen();
-            break;
-        case variables::STAFF_DETAILS_SCREEN:
-            staffDetailsScreen();
-            break;
-        case variables::DISPLAY_INVOICES_SCREEN:
-            displayInvoicesScreen();
-            break;
-        case variables::ADD_STUDENT_SCREEN:
-            addStudentScreen();
-            break;
-        case variables::PROMOTE_STUDENTS_SCREEN:
-            promoteStudentsScreen();
-            break;
-        case variables::ADD_ROOM_SCREEN:
-            addRoomScreen();
-            break;
-        case variables::ADD_STAFF_SCREEN:
-            addStaffScreen();
-            break;
-        case variables::REMOVE_STAFF_SCREEN:
-            removeStaffScreen();
-            break;
-        case variables::GENERATE_INVOICES_SCREEN:
-            generateInvoicesScreen();
-            break;
-        case variables::MARK_INVOICE_PAID_SCREEN:
-            markInvoicePaidScreen();
-            break;
-        case variables::GET_SPECIFIC_INVOICE_SCREEN:
-            getSpecificInvoiceScreen();
-            break;
         case variables::EXIT_SCREEN:
             exitScreen();
             break;

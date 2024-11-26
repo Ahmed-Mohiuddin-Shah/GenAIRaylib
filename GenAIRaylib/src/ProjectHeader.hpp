@@ -10,6 +10,7 @@
 #include <iomanip>
 #include <algorithm>
 
+
 // Includes for MultiThreading
 #include <future>
 #include <chrono>
@@ -56,13 +57,5 @@ Hostel hostelInstance;
 #include "exitScreen.h"
 #include "addStudentScreen.h"
 #include "addRoomScreen.h"
-#include "studentDetailsScreen.h"
-#include "roomDetailsScreen.h"
-#include "staffDetailsScreen.h"
 #include "displayInvoicesScreen.h"
 #include "addStaffScreen.h"
-#include "removeStaffScreen.h"
-#include "promoteStudentsScreen.h"
-#include "generateInvoicesScreen.h"
-#include "getSpecificInvoiceScreen.h"
-#include "markInvoicePaidScreen.h"

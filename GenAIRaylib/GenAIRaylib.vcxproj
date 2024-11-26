@@ -19,48 +19,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\addRoomScreen.h" />
-    <ClInclude Include="src\addStaffScreen.h" />
-    <ClInclude Include="src\addStudentScreen.h" />
     <ClInclude Include="src\codeSnippets.hpp" />
-    <ClInclude Include="src\createNewHostelScreen.h" />
-    <ClInclude Include="src\displayInvoicesScreen.h" />
     <ClInclude Include="src\exitScreen.h" />
     <ClInclude Include="src\fatalErrorScreen.h" />
     <ClInclude Include="src\FileReader.h" />
     <ClInclude Include="src\flavortext.h" />
-    <ClInclude Include="src\generateInvoicesScreen.h" />
-    <ClInclude Include="src\getSpecificInvoiceScreen.h" />
     <ClInclude Include="src\GUIElementsClasses.hpp" />
     <ClInclude Include="src\helperfunctions.h" />
     <ClInclude Include="src\homeScreen.h" />
     <ClInclude Include="src\hostel.h" />
     <ClInclude Include="src\hostelDetailsScreen.h" />
-    <ClInclude Include="src\invoice.h" />
     <ClInclude Include="src\loadingScreen.h" />
-    <ClInclude Include="src\markInvoicePaidScreen.h" />
     <ClInclude Include="src\overlay.h" />
     <ClInclude Include="src\ProjectHeader.hpp" />
-    <ClInclude Include="src\promoteStudentsScreen.h" />
-    <ClInclude Include="src\removeStaffScreen.h" />
-    <ClInclude Include="src\room.h" />
-    <ClInclude Include="src\roomDetailsScreen.h" />
-    <ClInclude Include="src\staff.h" />
-    <ClInclude Include="src\staffDetailsScreen.h" />
-    <ClInclude Include="src\student.h" />
-    <ClInclude Include="src\studentDetailsScreen.h" />
     <ClInclude Include="src\texttable.hpp" />
     <ClInclude Include="src\variabledefinitions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\FileReader.cpp" />
     <ClCompile Include="src\hostel.cpp" />
-    <ClCompile Include="src\invoice.cpp" />
-    <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\room.cpp" />
-    <ClCompile Include="src\staff.cpp" />
-    <ClCompile Include="src\student.cpp" />
-    <ClCompile Include="src\tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\bugcatgif.gif" />
